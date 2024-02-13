@@ -1,19 +1,20 @@
-def add(a, b):
-  print(a + b)
+print("🧮 Minimal Calculator")
 
-def subtract(a, b):
-  print(a - b)
+a = int(input("Number One: "))
+b = int(input("Number Two: "))
+operation = input("Operation: \n1 → Sum \n2 → Subtraction \n3 → Multiplication \n4 → Division \n")
 
-def multiply(a, b):
-  print(a * b)
+result = None
 
-def divide(a, b):
-  print(a / b)
+if operation == "1":
+  result = a + b
+elif operation == "2":
+  result = a - b
+elif operation == "3":
+  result = a * b
+elif operation == "4":
+  result = a / b
+else:
+  print("❌ No valid option")
 
-
-# Testing
-
-add(34, 21)
-subtract(78, 42)
-multiply(5, 6)
-divide(84, 7)
+print("👉🏼 Your result is", result)
